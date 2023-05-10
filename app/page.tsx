@@ -190,8 +190,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <p className="mb-3 font-normal text-gray-700">
+              <p className="mb-3 font-normal text-center text-gray-700">
                 Unique Plays: {item.unique_plays}
+                <br />
                 Total Plays: {item.total_plays}
               </p>
               <Bar data={chartData(item)} options={chartOptions}></Bar>
